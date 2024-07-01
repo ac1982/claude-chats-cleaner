@@ -1,12 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Claude Chats Cleaner",
-    "version": "1.0",
+    "name": "Chats Cleaner",
+    "version": "1.1",
     "permissions": [
       "https://claude.ai/*",
       "webRequest",
-      "notifications",
-      "storage"
+      "notifications"
     ],
     "host_permissions": [
       "https://claude.ai/*"

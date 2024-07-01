@@ -1,4 +1,4 @@
-# Claude Chats Cleaner
+# Chats Cleaner
 
 ## Background
 
