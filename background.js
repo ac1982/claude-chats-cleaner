@@ -32,7 +32,14 @@ function fetchAndDeleteConversations() {
     })
     .then(results => {
       deletedCount = results.filter(result => result === true).length;
-      showNotification(deletedCount);
+      showNotification("Done, now refresh your web.");
+
+      // Refresh the current tab
+      chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+        if (tabs[0]) {
+          chrome.tabs.reload(tabs[0].id);
+        }
+      });
     })
     .catch(error => console.error('Error:', error));
 }
@@ -57,22 +64,31 @@ function deleteConversation(uuid) {
 }
 
 function showNotification(message) {
+  const notificationOptions = {
+    type: 'basic',
+    iconUrl: 'icons/icon128.png',
+    title: 'Claude AI Conversation Cleaner',
+    message: message
+  };
+
   if (typeof browser !== 'undefined' && browser.notifications) {
-    browser.notifications.create({
-      type: 'basic',
-      iconUrl: 'icon.png',
-      title: 'Claude AI Conversation Cleaner',
-      message: message
-    });
+    browser.notifications.create(notificationOptions)
+      .then(() => console.log('Notification created successfully'))
+      .catch((error) => console.error('Error creating notification:', error));
   } else if (typeof chrome !== 'undefined' && chrome.notifications) {
-    chrome.notifications.create({
-      type: 'basic',
-      iconUrl: 'icon.png',
-      title: 'Claude AI Conversation Cleaner',
-      message: message
+    chrome.notifications.create(notificationOptions, (notificationId) => {
+      if (chrome.runtime.lastError) {
+        console.error('Error creating notification:', chrome.runtime.lastError);
+      } else {
+        console.log('Notification created successfully');
+      }
     });
   } else {
-    // 如果都不可用，使用 alert
+    console.warn('Notifications API not available, falling back to alert');
     alert('Claude AI Conversation Cleaner: ' + message);
   }
 }
+
+chrome.runtime.onInstalled.addListener(() => {
+  showNotification("Extension installed successfully!");
+});
