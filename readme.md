@@ -26,7 +26,7 @@ The core functionality of this extension is implemented through the following st
 ## Installation and Usage
 
 1. Install from Chrome or Edge extension store:
-   - For Chrome: [Chrome Web Store Link]
+   - For Chrome: [Chrome Web Store Link](https://chromewebstore.google.com/detail/chats-cleaner/oinbkbjbbobaollnbbfigafeoldcemci)
    - For Edge: [Microsoft Edge Add-ons Link]
    
 2. Once installed, you'll see the extension icon in your browser toolbar.
