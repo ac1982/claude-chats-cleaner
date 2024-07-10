@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Chats Cleaner",
   "version": "1.2",
-  "permissions": ["https://claude.ai/*", "webRequest", "notifications", "tabs"],
+  "permissions": ["https://claude.ai/*", "webRequest", "notifications"],
   "host_permissions": ["https://claude.ai/*"],
   "icons": {
     "16": "icons/icon16.png",
