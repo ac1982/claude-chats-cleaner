@@ -27,7 +27,7 @@ The core functionality of this extension is implemented through the following st
 
 1. Install from Chrome or Edge extension store:
    - For Chrome: [Chrome Web Store Link](https://chromewebstore.google.com/detail/chats-cleaner/oinbkbjbbobaollnbbfigafeoldcemci)
-   - For Edge: [Microsoft Edge Add-ons Link]
+   - For Edge: [Microsoft Edge Add-ons Link](https://microsoftedge.microsoft.com/addons/detail/dnoijbcidmodhdjnakfhcglegfpeldlf)
    
 2. Once installed, you'll see the extension icon in your browser toolbar.
 3. On the Claude AI webpage, click the extension icon, then click the "Clean Conversations" button to clear all chats.
