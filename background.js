@@ -7,6 +7,7 @@ function extractOrganizationID(url) {
   return match ? match[1] : null;
 }
 
+
 chrome.webRequest.onCompleted.addListener(
   function(details) {
     console.log('Intercepted request:', details.url);

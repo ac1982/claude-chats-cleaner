@@ -44,6 +44,24 @@ If you want to use the extension in developer mode:
 - Using this extension will delete all your Claude AI conversation history. Use with care.
 - It's recommended to backup any important conversation content before use.
 
+## Release Notes
+
+### v1.5.0 (2024-08-08)
+
+- Major update to Chats Cleaner
+- Features:
+  - One-click cleaning of all Claude AI conversations
+  - Automatic detection of user's organization ID
+  - Browser notification showing the number of deleted conversations
+  - Improved performance and stability
+- Supported browsers: Google Chrome and Microsoft Edge
+
+## Support the Project
+
+If you find this extension helpful, consider supporting the project! Your contribution helps maintain and improve Chats Cleaner.
+
+<a href="https://paypal.me/AlexChiang37" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal" style="height: 60px !important;width: auto !important;" ></a>
+
 ## Contributing
 
 Feel free to open issues or submit pull requests to improve this project.

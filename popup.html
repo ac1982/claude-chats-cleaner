@@ -2,12 +2,19 @@
 <html>
 <head>
   <style>
-    body { width: 200px; padding: 10px; }
-    button { width: 100%; padding: 10px; }
+    body {width: 250px; padding: 15px; font-family: Arial, sans-serif; background-color: #f0f0f0;}
+    h1 {font-size: 18px; color: #333; margin: 0 0 15px; text-align: center;}
+    button {width: 100%; padding: 12px; margin-bottom: 10px; border: none; border-radius: 5px; font-size: 14px; cursor: pointer; transition: all 0.3s; font-weight: bold;}
+    #cleanButton {background-color: #4CAF50; color: white;}
+    #cleanButton:hover {background-color: #45a049; transform: translateY(-2px); box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+    #coffeeButton {background-color: #008CBA; color: white;}
+    #coffeeButton:hover {background-color: #007B9E; transform: translateY(-2px); box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
   </style>
 </head>
 <body>
-  <button id="cleanButton">Clean Conversations</button>
+  <h1>Claude Chat Cleaner</h1>
+  <button id="cleanButton">Clean Chats</button>
+  <button id="coffeeButton">Buy Me a Coffee</button>
   <script src="popup.js"></script>
 </body>
 </html>
